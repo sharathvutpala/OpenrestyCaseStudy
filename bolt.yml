@@ -1,0 +1,6 @@
+---
+modulepath: "~/.puppetlabs/bolt-code/site:~/.puppetlabs/bolt-code/modules"
+concurrency: 10
+format: human
+ssh:
+  private-key: ~/.ssh/deploy_rsa
