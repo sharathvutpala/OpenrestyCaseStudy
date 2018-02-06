@@ -33,7 +33,8 @@
  * We can use Docker API to start and stop a service running on remote hosts and example configuration is
  * Add this configuration in /etc/systemd/system/docker.service.d/override.conf and restart the docker service
 
-    ```[Service]
+    ```
+    [Service]
     ExecStart=
     ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2376```
  * To access the remote docker API `docker -H ${ip_address} [command] `
